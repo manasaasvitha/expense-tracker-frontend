@@ -23,15 +23,14 @@ const PrivateRoute = ({ children }) => {
 
 
 function App() {
-
-  useEffect(() => {
+/* useEffect(() => {
   const darkMode = JSON.parse(localStorage.getItem("darkMode"));
   if (darkMode) {
     document.body.classList.add("dark");
   } else {
     document.body.classList.remove("dark");
   }
-}, []);
+}, []);*/
 
   return (
     <>

@@ -1,15 +1,14 @@
 import { useState } from "react";
 import axios from "axios";
 
-
-const API_URL = "https://expense-tracker-backend-1sbp.onrender.com/api";
 export default function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [link, setLink] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post(`${API_URL}/auth/forgot-password`, { email });
+    const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/auth/forgot-password`, { email });
+
     setLink(res.data.resetLink);
   };
 
