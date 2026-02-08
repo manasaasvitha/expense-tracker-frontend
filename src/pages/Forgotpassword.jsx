@@ -19,7 +19,7 @@ export default function ForgotPassword() {
       toast.success("Reset link generated");
 
     } catch (err) {
-      toast.error(err.response?.data?.message || "Invalid email / User not found"); // ✅ THIS WILL SHOW
+      toast.error(err.response?.data?.message || "User not found"); // ✅ THIS WILL SHOW
     }
   };
 
