@@ -11,7 +11,7 @@ export default function ForgotPassword() {
 
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/api/auth/forgot-password`,
+        `${import.meta.env.VITE_BACKEND_URL}/auth/forgot-password`,
         { email }
       );
 
