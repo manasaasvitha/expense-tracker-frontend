@@ -681,3 +681,168 @@ button:hover, .primary-btn:hover {
   cursor: pointer;
 }
 
+/* ============================= */
+/* 📱 Tablets (≤ 1024px) */
+/* ============================= */
+@media (max-width: 1024px) {
+
+  .container {
+    padding: 15px;
+  }
+
+  .dashboard-top-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dashboard-info {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .report-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pie-wrapper {
+    width: 100%;
+  }
+
+  .auth-card,
+  .auth-box {
+    width: 90%;
+  }
+}
+
+
+/* ============================= */
+/* 📱 Mobile (≤ 768px) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR STACK */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* CARDS FULL WIDTH */
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 18px;
+  }
+
+  .container {
+    margin: 20px auto;
+  }
+
+  /* FORMS */
+  .expense-form-vertical {
+    width: 100%;
+  }
+
+  .auth-card,
+  .auth-box {
+    width: 95%;
+    padding: 20px;
+  }
+
+  /* EXPENSE ITEMS STACK */
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .expense-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  /* FILTERS */
+  .filters {
+    max-width: 100%;
+  }
+
+  /* GRID LAYOUTS */
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* PROFILE */
+  .profile-card {
+    width: 90%;
+  }
+
+  /* TABLE SCROLL */
+  .report-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* SETTINGS */
+  .settings-page {
+    padding: 15px;
+  }
+}
+
+
+/* ============================= */
+/* 📱 Small Phones (≤ 480px) */
+/* ============================= */
+@media (max-width: 480px) {
+
+  .navbar .logo {
+    font-size: 20px;
+  }
+
+  button,
+  .primary-btn {
+    width: 100%;
+  }
+
+  .expense-form-vertical button {
+    width: 100%;
+  }
+
+  .dashboard-title {
+    font-size: 22px;
+  }
+
+  .dashboard-subtitle {
+    font-size: 14px;
+  }
+
+  .profile-avatar {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .summary-card {
+    padding: 15px;
+  }
+}
