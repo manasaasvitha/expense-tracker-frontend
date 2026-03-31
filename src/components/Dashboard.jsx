@@ -80,14 +80,15 @@ const Dashboard = () => {
       
       {/* MAIN GRID */}
       <div className="dashboard-grid">
-        <div className="card">
-          <h2>Add New Expense</h2>
-          <ExpenseForm refresh={fetchExpenses} />
-        </div>
 
         <div className="card">
           <h2>Monthly Summary</h2>
           <MonthlySummary expenses={expenses} />
+        </div>
+
+        <div className="card">
+          <h2>Add New Expense</h2>
+          <ExpenseForm refresh={fetchExpenses} />
         </div>
 
         <div className="card">
